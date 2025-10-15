@@ -28,7 +28,7 @@ button {
     font-weight: 100;
     background: linear-gradient(to right, #00CFFF, #C23EFF);
     box-shadow: 0 0 25px rgb(0, 140, 255);
-    padding: 9px 17px ;
+    padding: 9px 17px;
     border-radius: 10px;
     transition: 0.3s ease;
 }
@@ -37,6 +37,7 @@ button {
 button:hover {
     transform: scale(1.1);
 }
+
 /* button style  end*/
 
 
@@ -53,7 +54,7 @@ button:hover {
 
 
 /* navigation  */
-.navigation .logo h2{
+.navigation .logo h2 {
     background: linear-gradient(to right, #00CFFF, #C23EFF);
     text-shadow: 0 0 25px rgb(0, 140, 255);
     /* Clip the background to the shape of the text */
@@ -75,3 +76,75 @@ button:hover {
     font-size: 18px;
 }
 
+
+/* hero section */
+.hero_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+}
+
+
+.hero_section::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+
+.content_hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    z-index: 1;
+}
+
+
+
+.hero_section h1 {
+    padding-top: 0;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 400;
+    background: linear-gradient(to right, #00CFFF, #C23EFF);
+    /* Clip the background to the shape of the text */
+    -webkit-background-clip: text;
+    /* Standard property */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero_section p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 350;
+    color: rgb(187, 187, 187);
+}
+
+.hero_section .hero_buttons button {
+    margin: 20px;
+}
+
+
+
+#watch_live{
+    background: transparent;
+    border: 1px solid #00CFFF;
+    color: #00CFFF;
+    box-shadow: 0 0 0;
+}
+#watch_live:hover{
+    background-color: #00d0ff4d;
+    color: #000;
+
+}
