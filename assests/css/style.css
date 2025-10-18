@@ -50,17 +50,26 @@ input[type='submit']:hover {
     position: fixed;
     z-index: 999;
     width: 100%;
+    margin: 0;
 }
 
 .navigation ul {
     display: flex;
     list-style: none;
 }
+.navigation .sign_login a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.sign_login a:hover{
+    color: #00CFFF;
+}
 
 
 /* navigation  */
 .navigation .logo h2,
-.footer_section h2 {
+.footer_section h2,.read_more_title h3 {
     background: linear-gradient(to right, #00CFFF, #C23EFF);
     text-shadow: 0 0 25px rgb(0, 140, 255);
     /* Clip the background to the shape of the text */
@@ -345,6 +354,17 @@ h4 {
     background-size: cover;
     background-origin: content-box;
     height: 500px;
+    position: relative;
+}
+.tournaments_hero_section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
 }
 
 
@@ -470,6 +490,14 @@ h4 {
     box-shadow: 0 0 0;
     z-index: 999;
 }
+ .btn_price button{
+    position: absolute;
+    top:0;
+    background-color: red;
+    right: 0;
+    width: 95px;
+    box-shadow: #000;
+}
 
 .card_info {
     overflow: hidden;
@@ -492,6 +520,7 @@ h4 {
     width: 430px;
     height: 230px;
     overflow: hidden;
+    position: relative;
 }
 
 /* tournaments page style end */
@@ -507,8 +536,18 @@ h4 {
     background: url(../images/AdobeStock_484007461.webp);
     background-position: center;
     background-size: cover;
+    position: relative;
 }
-
+.teams_section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
 
 .teams_card .card_info button {
     background: transparent;
@@ -561,6 +600,17 @@ h4 {
     background: url(../images/call-of-duty-black-3840x2160-24210.jpg);
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+.games_section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
 }
 
 .games_card img {
@@ -619,7 +669,10 @@ h4 {
     background: url(../images/ABSTRACT_WALLPAPER_Mesa_de_trabajo_1.jpg);
     background-position: center;
     background-size: cover;
+    width: 100%;
 }
+
+
 
 .blog_cards .card {
     width: 480px;
@@ -705,7 +758,7 @@ h4 {
 }
 
 .contact_section .container .sub_container .right_side_container form input,
-textarea {
+textarea, .join_tournaments_section select {
     font-size: large;
     padding: 20px;
     margin: 10px;
@@ -810,7 +863,7 @@ textarea {
 
 /* Events page style start */
  .events_section {
-    background: url(../images/events.avif);
+    background: url(../images/events4.webp);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -843,26 +896,33 @@ textarea {
     height: 400px;
 }
  /* Events page style end */
-
- .read_more{
-    height: 500px;
-    border-radius: 20px;
-    width: 1500px;
-    margin: 100px;
-    padding: 50px;
+/* read more style start */
+.read_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #121219;
     border: 1px solid rgba(0, 207, 255, 0.1);
- }
- .read_more_content{
+    height: 100vh;
+    border-radius: 20px;
+    width: 100%;
+    padding: 50px;
+    flex-direction: column;
+}
+.read_more_content{
     padding: 20px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
+} 
  .read_more_content .read_more_img img{
     border-radius: 20px;
  }
  .read_more_content{
-    color: white;
- }
+     color: white;
+}
+.read_more_title h3{
+    font-size: 50px;
+}
+    /* read more style end */
